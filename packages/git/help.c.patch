@@ -10,12 +10,3 @@ diff -u -r ../git-2.9.3/help.c ./help.c
  
  const char *help_unknown_cmd(const char *cmd)
  {
-@@ -339,7 +339,7 @@
- 		 * it's a bad interpreter in the #! line.
- 		 */
- 		if (!strcmp(candidate, cmd))
--			die(_(bad_interpreter_advice), cmd, cmd);
-+			die(_(bad_interpreter_advice), cmd);
- 
- 		/* Does the candidate appear in common_cmds list? */
- 		while (n < ARRAY_SIZE(common_cmds) &&
